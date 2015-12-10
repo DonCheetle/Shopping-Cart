@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <style>
+    .hidden {
+        display: none;
+    }
+       .visible {
+           visibility: visible;
+       }
+    </style>
+    <title>JavaScript Week 1 Lesson 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+    <!--JS-->
+
+
+    <!-- HTML5 SHIM-->
+
+
+
+</head>
+
+
+<!--START PAGE HERE-->
+
+<body>
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Davemart</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li> </li>
+                    <li id="invite"></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" style="padding-right: 5px;"></span>Shopping Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+
+
+
+        <!-- Row start -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading clearfix">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3 class="panel-title">How many shirts? </h3> </td>
+                                <td>
+
+                                    <span><input id="shirts" type="text" class="form-control" placeholder="Shirt Quantity..." style="margin-left: 5px;"></span></td>
+                                <td>
+                                    <button name="buttonExecute" onclick="PlayerSlots()" type="button" value="update" style="margin-left: 15px;" class="btn btn-primary">Update</button>
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                    <div id="shirtlist" ></div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Row end -->
+
+        <div class="row" >
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="panel panel-default hidden" id="preview">
+                    <div class="panel-heading clearfix">
+                        <i class="icon-calendar"></i>
+                        <h3 class="panel-title">Cart Preview</h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="row">
+
+
+
+
+                            <div class="col-md-9 col-sm-9">
+
+                                <div id="totalpurse"></div>
+                                <div id="t0"></div>
+
+                                <div id="t1"></div>
+
+
+
+                                <div id="t2"></div>
+
+                                <div>
+                                    <h3 id="t3"></h3></div>
+
+                            </div>
+
+
+
+                            <div class="col-md-3 col-sm-3">
+                                <div id="rounds"></div>
+                                <div id="pursetype"></div>
+                            </div>
+
+
+
+                            <div class="col-md-3 col-sm-3">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Row end -->
+
+
+
+
+
+
+    </div>
+
+    <!--JS-->
+    <script src="script.js"></script>
+</body>
+
+</html>
